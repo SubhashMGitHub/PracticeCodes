@@ -15,6 +15,10 @@ namespace ConsoleApp1
     }
     class Program:Test
     {
+        public void Display(string a)
+        {
+            Console.WriteLine(a);
+        }
         public override void Display()
         {
             Console.WriteLine("This is a override method!!!");
@@ -24,6 +28,7 @@ namespace ConsoleApp1
             Console.WriteLine("Run time polymorphism example...");
             Program obj = new Program();
             obj.Display();
+            obj.Display("This is a overload method!!!");
             Console.ReadKey();
         }
     }
